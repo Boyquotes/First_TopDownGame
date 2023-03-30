@@ -17,9 +17,15 @@ func _physics_process(_delta):
 	velocity = input_direction * move_speed
 	
 	move_and_slide()
+	pick_new_state()
 
 func update_animation_paramters(move_input : Vector2):
 	if(move_input != Vector2.ZERO):
 		animationTree.set("parameters/Walk/blend_position", move_input)
 		animationTree.set("parameters/Idle/blend_position", move_input)
-#more code to write
+func  pick_new_state():
+	if(velocity != Vector2.ZERO):
+		state_machine.travel("Walk")
+	else:
+		state_machine.travel("Idle")
+
