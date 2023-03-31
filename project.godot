@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FirstTopDownGame"
-run/main_scene="res://Characters/MainPlayer.tscn"
+run/main_scene="res://Scenes/game_level.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
 
@@ -21,6 +21,10 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 window/stretch/scale=4.0
+
+[gui]
+
+fonts/size/resizable=true
 
 [input]
 
