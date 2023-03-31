@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://hxanoyo3u55f"]
+
+[ext_resource type="Texture2D" uid="uid://b0aosu6d501q2" path="res://Assets/Daniels_assets/testAsset.png" id="1_o6aip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f027m"]
+size = Vector2(160, 144)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_f027m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -24)
+scale = Vector2(10, 9)
+texture = ExtResource("1_o6aip")
