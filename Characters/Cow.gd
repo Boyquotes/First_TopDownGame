@@ -40,7 +40,5 @@ func  pick_new_state():
 		current_state = COW_STATE.IDLE
 		timer.start(idle_time)
 		
-
-
 func _on_timer_timeout():
 	pick_new_state()
